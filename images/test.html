@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Packages and Additional Options</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f9f9f9;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .logo img {
+        width: 100px;
+        height: auto;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        flex: 1;
+      }
+
+      .card img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 15px;
+        border-radius: 10px;
+      }
+
+      .card h2 {
+        font-size: 1.2rem;
+        color: #444;
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 0.9rem;
+        color: #666;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 768px) {
+        .card-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .card {
+          max-width: 100%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        .card p {
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="icon-paw-2.png" alt="Paw Logo" />
+      </div>
+      <h1>Packages and Additional Options</h1>
+      <div class="card-container">
+        <div class="card">
+          <img src="/images/prod1.png" alt="Back to Nature" />
+          <h2>Back to Nature</h2>
+          <p>
+            Following private cremation, receive your pet’s ashes in a scatter
+            tube along with an ink paw print, certificate of cremation, and your
+            pet’s stainless steel cremation identification tag.
+          </p>
+        </div>
+        <div class="card">
+          <img src="/images/prod2.png" alt="Companion" />
+          <h2>Companion</h2>
+          <p>
+            Following private cremation, receive your pet’s ashes in an urn
+            (laser engraving optional) along with a clay paw print, fur
+            clipping, certificate of cremation, and your pet’s stainless steel
+            cremation identification tag.
+          </p>
+        </div>
+        <div class="card">
+          <img src="/images/prod3.png" alt="My Best Friend" />
+          <h2>My Best Friend</h2>
+          <p>
+            Following private cremation, receive your pet’s ashes in a premium
+            wood urn (laser engraving optional) along with a clay paw print, fur
+            clipping, an ink nose print, a custom resin memento with fur
+            clippings, certificate of cremation, and your pet’s stainless steel
+            cremation identification tag.
+          </p>
+        </div>
+        <div class="card">
+          <img src="/images/prod4.png" alt="Additional Options" />
+          <h2>Additional Options</h2>
+          <p>
+            Private or communal cremation packages can be combined with the
+            following options: a premium wood or metal urn, laser engraving, ink
+            paw and nose prints, clay paw prints, fur clippings, and resin-based
+            mementos with fur clippings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
