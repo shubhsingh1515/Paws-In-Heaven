@@ -100,7 +100,7 @@
   .small-image {
     display: block; /* Show the small image */
     position: absolute;
-    top: 98%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 80%;
