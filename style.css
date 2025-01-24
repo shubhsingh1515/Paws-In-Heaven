@@ -6,6 +6,9 @@
   display: flex;  
   padding-top: 60px;
 }
+.small-image {
+  display: none; 
+}
 
 .container p {
   padding-left:5%;
@@ -38,20 +41,21 @@
 }
 
 .logo {
-  height: 180px; 
+  height: 220px; 
   position:absolute;
-  top: 24px;
+  top: 10px;
   margin-left: 40px;
 }
+
 
 @media (max-width: 1220px) {
   .header{
     padding:0px;
   }
   .logo {
-    height: 100px; 
+    height: 140px; 
     margin-left: 20px;
-    top: 40px;
+    top: 28px;
   }
   .contact{
     display:revert;
@@ -88,15 +92,30 @@
   .header {
     padding: 0px; 
   }
+  .background {
+    background-image: none; 
+    background-color:#e3ffff;
+  }
 
+  .small-image {
+    display: block; /* Show the small image */
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: fit-content;
+    border-radius: 10px; 
+  }
   .logo {
     height: 80px; 
     left:10px;
-    top:43px;
+    top:30px;
   }
   .contact-info{
     display: flex;
     font-size: 10px;
+    padding:5px;
   }
   .contact{
     display:revert;
@@ -104,16 +123,18 @@
 
 
 }
-
+.text{
+  margin-left:-20px;
+}
 
 .text h1 {
   font-size: 3.5rem;
   line-height: 1.2;
   font-weight: bold;
   margin-bottom: 20px;
-  padding-left:40px;
+  padding-left:38px;
   font-family: "DynaPuff", serif;
-  margin-top: 28%;
+  margin-top: 22%;
 }
 
 .text p {
@@ -137,13 +158,18 @@
 
 @media (max-width: 480px) {
   .text h1 {
-    font-size: 2rem; 
+    font-size: 2rem;
+    padding-left:0px; 
   }
 
   .text p {
-    font-size: 1.5rem; 
-    margin: 0 10px; 
+    font-size: 1.0rem; 
+    text-align: center;
   }
+  .text{
+    margin-left:0px;
+  }
+  
 }
 
 /*  who we are */
@@ -177,6 +203,7 @@
 .who-we-are p {
   font-size: 2rem;
   margin-left: 40px;
+  margin-right:50px;
 }
 
 .who-we-are .cat-image {
@@ -207,6 +234,7 @@
   .who-we-are p {
     font-size: 1.4rem;
     margin-left: 40px;
+    margin-right:0px;
    
   }
 
@@ -230,6 +258,7 @@
 
   .who-we-are .content p {
     font-size: 1.0rem;
+    margin-left:0px
   }
 
   .who-we-are .cat-image {
@@ -279,17 +308,19 @@
 
   .servi p {
       font-size: 1.4rem;
+      margin-left: 0px;
   }
 }
 @media (max-width: 480px) {
- 
-
   .servi h2 {
       font-size: 1.5rem;
   }
 
   .servi p {
       font-size: 1rem;
+  }
+  .aquamation{
+    margin-left: 0px;
   }
 }
 
@@ -302,7 +333,7 @@ body {
 .aquamation {
   margin: 0 auto;
   padding:40px;
-  padding-left:80px;
+  padding-left:50px;
   margin-top:20px;
   background: #fdfdf0;
 }
@@ -353,7 +384,9 @@ li {
 @media (max-width: 768px) {
   .aquamation .section p {
     font-size: 1.0rem;
-    
+  }
+  h2{
+    font-size:2.0em !important;
   }
   .section {
     padding:20px;
@@ -420,23 +453,6 @@ p {
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  .icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1em;
-  }
- .ul{
-  font-size: 1rem;
- }
-}
 
 /* packages and additional options */
 
@@ -444,9 +460,7 @@ p {
   font-family: Arial, sans-serif;
   margin: 0 auto;
   background-color: #ffffff;
-  padding-left:200px;
-  padding-right:200px;
-  padding-bottom: 100px;
+  padding:5% 10% 5% 10%;
 }
 
 .abc h1 {
@@ -555,61 +569,65 @@ p {
     padding: 20px;
   }
   .abc h1 {
-    font-size: 2.5em;
+    font-size: 2.0em;
+    padding:0px 0px 0px 20px;
   }
   .services-container {
-    flex-direction: column;
     align-items: center;
   }
   .service-card {
-    width: 90%;
+    
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
   }
   .service-dot{
-    left:180px;
+    left:0px;
   }
   .service-image-container {
     width: 150px;
     height: 150px;
   }
   .service-description {
-    width: 90%;
-    height: auto;
+   
+    height: 350px;
     padding-top: 80px;
     margin-top: -80px;
   }
   .service-title {
     font-size: 1.2em;
   }
+  .service-text {
+    font-size: 1.0em;
+    padding:0px 4px 20px 4px;
+  }
 }
 
 /* Small Devices (480px and below) */
 @media (max-width: 480px) {
   .service-dot{
-    left:105px;
+    left:0px;
   }
   .abc {
     padding: 10px;
   }
   .abc h1 {
     font-size: 2em;
-    text-align: center;
     margin-top:0%;
+    padding:0px 0px 0px 0px;
+    margin-left:0px;
   }
   .services-container {
     gap: 10px;
   }
   .service-card {
-    width: 100%;
+    
   }
   .service-image-container {
     width: 120px;
     height: 120px;
   }
-  .service-description {
-    padding: 15px;
-    padding-top: 60px;
-    margin-top: -50px;
-  }
+
   .service-text {
     font-size: 1em;
     line-height: 1.3;
@@ -693,34 +711,49 @@ p {
   color: white;
   font-size: 25px;
 }
+@media (max-width:900px){
+  .pih-pets-image {
+    margin-top: 30%;
+  }
+}
 
 @media (max-width: 768px) {
   .pih-content-wrapper {
     margin-bottom: 150px;
+  }
+  .pih-logo {
+    width: 200px;
+    height: auto;
+  }
+  .pih-contact-item{
+    font-size:15px;
   }
   .pih-contact-info {
     
     display: flex;
   }
   .pih-pets-image {
- 
+    margin-top:15%;
   }
   .pih-copyright {
-    position: static;
+    padding-bottom:20px;
     margin-top: 20px;
     text-align: center;
   }
 }
+@media (max-width:660px){
+  .pih-pets-image {
+    margin-top:50%;
+  }
+}
 
 @media (max-width: 480px) {
-  .pih-footer-container {
-    padding: 10px;
-  }
+ 
   .pih-logo {
-    width: 200px;
+    width: 150px;
   }
   .pih-contact-item {
-    font-size: 16px;
+    font-size: 12px;
     gap: 8px;
   }
   .pih-contact-icon {
@@ -732,8 +765,32 @@ p {
     
   }
   .pih-copyright {
-    position:absolute;
-    font-size: 12px;
-    top:430px;
+   font-size:15px;
   }
+}
+
+@media (max-width:480px){
+  .aquamation{
+    padding:0px 0px 0px 0px;
+  }
+  .paragraph {
+    margin:0px;
+  }
+ 
+  .content{
+    margin-left:0px;
+  }
+  .aquamation .section {
+    margin-left:10px;
+  }
+  p {
+    padding: 0px 0px 0px 0px;
+  }
+  h2{
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  
 }
