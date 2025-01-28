@@ -93,6 +93,7 @@
     padding: 0px; 
   }
   .background {
+    height:90vh;
     background-image: none; 
     background-color:#e3ffff;
   }
@@ -100,7 +101,7 @@
   .small-image {
     display: block; /* Show the small image */
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 80%;
@@ -764,12 +765,13 @@ p {
     width: 20px;
     height: 20px;
   }
-  .pih-pets-image {
-   
-    
-  }
   .pih-copyright {
    font-size:15px;
+  }
+}
+@media (max-width: 350px) {
+  .pih-pets-image {
+    margin-top: 75%;
   }
 }
 
