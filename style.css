@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Mogra&display=swap');
 
 .background {
-  background: url('/images/hero.png') no-repeat center center/cover;
+  background: url('images/hero.png') no-repeat center center/cover;
   height: 100vh;
   display: flex;  
   padding-top: 60px;
@@ -50,16 +50,16 @@
 
 @media (max-width: 1220px) {
   .header{
-    padding:0px;
+    padding:15px;
   }
   .logo {
     height: 140px; 
     margin-left: 20px;
     top: 28px;
   }
-  .contact{
+  /* .contact{
     display:revert;
-  }
+  } */
   .contact-info{
     display: flex;
     font-size: 15px;
@@ -75,8 +75,8 @@
   .logo {
     height: 100px; 
     margin: 0; 
-    left:10px;
-    top:33px;
+    left:12px;
+    top:50px;
   }
   .contact{
     display:revert;
@@ -799,4 +799,63 @@ p {
     text-align: center;
   }
   
+}
+
+/* Style the Scroll to Top button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#scrollToTopBtn:hover {
+  background-color: #1313eb;
+}
+
+#scrollToTopBtn i {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.contact-btnnew {
+  display: inline-block;
+  background-color: #9353a1;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contact-btnnew:hover {
+  color:#8e44ad;
+  background-color: white;
+  border: 3px solid #931aae;
+}
+
+@media (max-width: 768px) {
+  .contact-btnnew {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+  #scrollToTopBtn{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  } 
+  #scrollToTopBtn i {
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
