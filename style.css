@@ -808,7 +808,7 @@ p {
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: #007bff;
+  background-color: #6c1280;
   color: white;
   border: none;
   border-radius: 50%;
@@ -818,7 +818,7 @@ p {
 }
 
 #scrollToTopBtn:hover {
-  background-color: #1313eb;
+  background-color: #c609b0;
 }
 
 #scrollToTopBtn i {
@@ -839,9 +839,8 @@ p {
 }
 
 .contact-btnnew:hover {
-  color:#8e44ad;
-  background-color: white;
-  border: 3px solid #931aae;
+  color:#fffeff;
+  background-color: #6c1280;
 }
 
 @media (max-width: 768px) {
