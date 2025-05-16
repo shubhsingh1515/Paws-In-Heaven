@@ -1,7 +1,7 @@
 // Get the button
 let scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-// Show the button when scrolling down
+
 window.onscroll = function () {
   if (
     document.body.scrollTop > 200 ||
